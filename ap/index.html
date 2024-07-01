@@ -57,108 +57,151 @@
 
 
 
-    <h2>To Be Announced.</h2>    
+<!--     <h2>To Be Announced.</h2>     -->
 
-    <!-- <table>
+    <table>
         <tr>
             <td>
-                <h2 style="font-size: 20px">Uncertainty Estimation in Deterministic Vision Transformer</h2> 
-                <strong>Wenqian Ye, Yunsheng Ma, Xu Cao </strong>
-                <a class="btn btn-red" href="assets/papers/3/CameraReady/UDM_AAAI_23_camera_ready.pdf">PDF</a> <br>
-                <u>Abstract</u>: Though Transformers have achieved promising results in many computer vision tasks, they tend to be over-confident in predictions, as the standard Dot Product Self-Attention (DPSA) can barely preserve distance for unbounded input domain. Existing uncertainty quantification approaches, such as Deep Ensemble and MC Dropout, are inapplicable to sizable Vision Transformers, owing to their high computational and memory cost. In this paper, we fill this gap by proposing a novel CoBiLiR Self-Attention module. Specifically, we replace the dot product similarity with the distance within Banach Space and also normalize the term by a theoretical lower bound of the Lipschitz constant. Extensive experiments conducted on standard vision benchmarks demonstrate that our method outperforms the state-of-the-art single forward pass approaches in prediction, calibration, and uncertainty estimation. Our code will be released if accepted.
+                <h2 style="font-size: 20px"> A General Method for Measuring Calibration of Probabilistic Neural Regressors </h2> 
+                <strong> Spencer Young, Porter Jenkins </strong>
+<!--                 <a class="btn btn-red" href="assets/papers/3/CameraReady/UDM_AAAI_23_camera_ready.pdf">PDF</a>  -->
+                <br>
+                <u>Abstract</u>: As machine learning systems become increasingly integrated into real-world applications, accurately representing uncertainty is crucial for enhancing their robustness and reliability. Neural networks are effective at fitting high-dimensional probability distributions but often suffer from poor calibration, leading to overconfident predictions. In the regression setting, we find that existing metrics for quantifying model calibration, such as Expected Calibration Error (ECE) and Negative Log Likelihood (NLL), introduce bias, require parametric assumptions, and suffer from information theoretic bounds on their estimating power. We propose a new approach using conditional kernel mean embeddings to measure calibration discrepancies without these shortcomings. Preliminary experiments on synthetic data demonstrate the method's potential, with future work planned for more complex applications.
             </td>
         </tr>
 
         <tr>
             <td>
-                <h2 style="font-size: 20px">Detecting Multi-Label Out-of-Distribution Nodes on Graphs</h2>
-                <strong>Ruomeng Ding, Xujiang Zhao, Chen Zhao, Minglai Shao</strong> <br>
-                <a class="btn btn-red" href="assets/papers/3/CameraReady/UDM_AAAI_23_camera_ready.pdf">PDF</a> <br>
-                <u>Abstract</u>: Research and applications involving Out-of-Distribution Detection (OOD) on graph-structured data are proving critical. Existing OOD detection methods on graphs do not apply to multi-label settings. There are other semi-supervised node classification methods that do not distinguish OOD nodes from those in distribution (ID). This paper proposes an Evidence-Based Out-of-Distribution Detection method for multi-label graphs based on Evidential Deep Learning (EDL). The evidence for multiple labels is predicted by Multi-Label Evidential Graph Neural Networks (ML-EGNNs) with Beta Loss. Multi-label opinions are fused using the Joint Belief by comultiplication. As an additional step, we introduce a kernel-based node positive evidence estimation (KNPE) method that is designed to reduce errors in estimating positive evidence. The results of our experiments show that our multi-label OOD detection model is both effective and efficient.
+                <h2 style="font-size: 20px"> Flexible Heteroscedastic Count Regression with Deep Double Poisson Networks </h2> 
+                <strong> Spencer Young, Porter Jenkins, Longchao Da, Jeff Dotson, Hua Wei </strong>
+<!--                 <a class="btn btn-red" href="assets/papers/3/CameraReady/UDM_AAAI_23_camera_ready.pdf">PDF</a>  -->
+                <br>
+                <u>Abstract</u>: Neural networks that can produce accurate, input-conditional uncertainty representations are critical for real-world applications. Recent progress on heteroscedastic continuous regression has shown great promise for calibrated uncertainty quantification on complex tasks, like image regression. However, when these methods are applied to discrete regression tasks, such as crowd counting, ratings prediction, or inventory estimation, they tend to produce predictive distributions with numerous pathologies. We propose to address these issues by training a neural network to output the parameters of a Double Poisson distribution, which we call the Deep Double Poisson Network (DDPN). In contrast to existing methods that are trained to minimize Gaussian negative log likelihood (NLL), DDPNs produce a proper probability mass function over discrete output. Additionally, DDPNs naturally model under-, over-, and equi-dispersion, unlike networks trained with the more rigid Poisson and Negative Binomial parameterizations. We show DDPNs 1) vastly outperform existing discrete models; 2) meet or exceed the accuracy and flexibility of networks trained with Gaussian NLL; 3) produce proper predictive distributions over discrete counts; and 4) exhibit superior out-of-distribution detection.
             </td>
         </tr>
 
         <tr>
             <td>
-                <h2 style="font-size: 20px">How to Allocate your Label Budget? Choosing between Active Learning and Learning to Reject in Anomaly Detection</h2>
-                <strong>Lorenzo Perini, Daniele Giannuzzi, Jesse Davis</strong> 
-                <a class="btn btn-red" href="assets/papers/6/CameraReady/AAAI_WorkshopUDM23_LorenzoPerini.pdf">PDF</a> <br>
-                <u>Abstract</u>: Anomaly detection attempts at finding examples that deviate from the expected behaviour. Usually, anomaly detection is tackled from an unsupervised perspective because anomalous labels are rare and difficult to acquire. However, the lack of labels makes the anomaly detector have high uncertainty in some regions, which usually results in poor predictive performance or low user trust in the predictions. One can reduce such uncertainty by collecting specific labels using Active Learning (AL), which targets examples close to the detector's decision boundary. Alternatively, one can increase the user trust by allowing the detector to abstain from making highly uncertain predictions, which is called Learning to Reject (LR). One way to do this is by thresholding the detector's uncertainty based on where its performance is low, which requires labels to be evaluated. Although both AL and LR need labels, they work with different types of labels: AL seeks strategic labels, which are evidently biased, while LR requires i.i.d. labels to evaluate the detector's performance and set the rejection threshold. Because one usually has a unique label budget, deciding how to optimally allocate it is challenging. In this paper, we propose a mixed strategy that, given a budget of labels, decides in multiple rounds whether to use the budget to collect AL labels or LR labels. The strategy is based on a reward function that measures the expected gain when allocating the budget to either side. We evaluate our strategy on 18 benchmark datasets and compare it to some baselines.
+                <h2 style="font-size: 20px"> Learning Graph Structures and Uncertainty for Accurate and Calibrated Time-series Forecasting </h2> 
+                <strong> Harshavardhan Kamarthi, Lingkai Kong, Alexander Rodríguez, Chao Zhang, B. Aditya Prakash </strong>
+<!--                 <a class="btn btn-red" href="assets/papers/3/CameraReady/UDM_AAAI_23_camera_ready.pdf">PDF</a>  -->
+                <br>
+                <u>Abstract</u>: Multi-variate time series forecasting is an important problem with a wide range of applications. Recent works model the relations between time-series as graphs and have shown that propagating information over the relation graph can improve time series forecasting. However, in many cases, relational information is not available or is noisy and reliable. Moreover, most works ignore the underlying uncertainty of time-series both for structure learning and deriving the forecasts resulting in the structure not capturing the uncertainty resulting in forecast distributions with poor uncertainty estimates. We tackle this challenge and introduce STOIC, that leverages stochastic correlations between
+time-series to learn underlying structure between time-series and
+to provide well-calibrated and accurate forecasts. Over a wide-range of benchmark datasets STOIC provides around 16% more accurate and 14% better-calibrated forecasts. STOIC also shows better adaptation to noise in data during inference
+and captures important and useful relational information in various benchmarks.
             </td>
         </tr>
 
         <tr>
             <td>
-                <h2 style="font-size: 20px">Few-Shot Out of Domain Intent Detection with Covariance Corrected Mahalanobis Distance</h2>
-                <strong>Jayasimha Talur, Oleg Smirnov, Paul Missault</strong> 
-                <a class="btn btn-red" href="assets/papers/7/CameraReady/aaai23_camera_ready.pdf">PDF</a> <br>
-                <u>Abstract</u>: Conversational agents like chat bots and voice assistants are trained to understand and respond to user intents. On encountering an utterance with an intent different from the ones they have been trained on, these agents are expected to classify the intent as "unknown" or "out of domain". This problem is known as out of domain (OOD) intent detection. Podolskiy et al., showed that Mahalanobis distance can be used effectively for identifying OOD intents, outperforming competing approaches. However, their method fails to beat the baselines in the practically important few-shot setting. In this paper we analyze the reason for low performance and propose a covariance corrected Mahalanobis distance for detecting out-of-domain intents.
+                <h2 style="font-size: 20px"> ForeCal: Random Forest-based Calibration for DNNs </h2> 
+                <strong> Dhruv Nigam </strong>
+<!--                 <a class="btn btn-red" href="assets/papers/3/CameraReady/UDM_AAAI_23_camera_ready.pdf">PDF</a>  -->
+                <br>
+                <u>Abstract</u>: Deep neural network(DNN) based classifiers do extremely well in discriminating between observations, resulting in higher ROC AUC and accuracy metrics, but their outputs are often miscalibrated with respect to true event likelihoods.
+Post-hoc calibration algorithms are often used to calibrate the outputs of these classifiers.
+Methods like Isotonic regression, Platt scaling, and Temperature scaling have been shown to be effective in some cases but are limited by their parametric assumptions and/or their inability to capture complex non-linear relationships.
+We propose ForeCal - a novel post-hoc calibration algorithm based on Random forests.
+ForeCal exploits two unique properties of Random forests: the ability to enforce weak monotonicity and range-preservation.
+It is more powerful in achieving calibration than current state-of-the-art methods, is non-parametric, and can incorporate exogenous information as features to learn a better calibration function.
+Through experiments on 43 diverse datasets from the UCI ML repository, we show that ForeCal outperforms existing methods in terms of Expected Calibration Error(ECE) with minimal impact on the discriminative power of the base DNN as measured by AUC.
             </td>
         </tr>
 
         <tr>
             <td>
-                <h2 style="font-size: 20px">Uncertainty-Aware Data Augmentation for Offline Reinforcement Learning</h2>
-                <strong>Yunjie Su, Yilun Kong, Xueqian Wang</strong>
-                <a class="btn btn-red" href="assets/papers/13/CameraReady/UADA.pdf">PDF</a> <br>
-                <u>Abstract</u>: Data augmentation is commonly used to solve the short coverage of the full state-action space problem in Offline RL. However, the existing data augmentation methods for proprioceptive information meets a dilemma where the data coverage is limited by tight constraints, otherwise too aggressive method will hurt the performance. We aim to address the problem by our proposed algorithm Uncertainty-Aware Data Augmentation (UADA), an effective and implementation-wise method. We extend the static offline datasets during training by adding gradient-based perturbation to the state and utilizing the estimated uncertainty of the value function to constrain the range of the gradient. The predictive uncertainty of the value function works as a guidance to adjust the range of augmentation automatically, ensuring the state perturbation adaptive and convincing. We plugged our method into standard offline RL algorithms and evaluated it on several offline reinforcement learning tasks. Empirically, we observe that UADA substantially improves the performance and achieves better model stability.
+                <h2 style="font-size: 20px"> Addressing Graph Anomaly Detection via Causal Edge Separation and Spectrum </h2> 
+                <strong> Zengyi Wo, Wenjun Wang, Minglai Shao, Chang Liu, Yumeng Wang, Yueheng Sun </strong>
+<!--                 <a class="btn btn-red" href="assets/papers/3/CameraReady/UDM_AAAI_23_camera_ready.pdf">PDF</a>  -->
+                <br>
+                <u>Abstract</u>: In the real world, anomalous entities often add more legitimate connections while hiding direct links with other anomalous entities, leading to heterophilic structures in anomalous networks that most GNN-based techniques fail to address. Several works have been proposed to tackle this issue in the spatial domain. However, these methods overlook the complex relationships between node structure encoding, node features, and their contextual environment and rely on principled guidance, research on solving spectral domain heterophilic problems remains limited. This study analyzes the spectral distribution of nodes with different heterophilic degrees and discovers that the heterophily of anomalous nodes causes the spectral energy to shift from low to high frequencies. To address the above challenges, we propose a spectral neural network CES2-GAD based on causal edge separation for anomaly detection on heterophilic graphs. Firstly, CES2-GAD will separate the original graph into homophilic and heterophilic edges using causal interventions. Subsequently, various hybrid-spectrum filters are used to capture signals from the segmented graphs. Finally, representations from multiple signals are concatenated and input into a classifier to predict anomalies. Extensive experiments with real-world datasets have proven the effectiveness of the method we proposed.
             </td>
         </tr>
 
         <tr>
             <td>
-                <h2 style="font-size: 20px">Knowledge-enhanced Prompt for Open-domain Commonsense Reasoning</h2>
-                <strong>Chen Ling, Xuchao Zhang, Xujiang zhao, Yifeng Wu, Yanchi Liu, Wei Cheng, Haifeng Chen, Zhao Liang</strong>
-                <a class="btn btn-red" href="assets/papers/14/CameraReady/Commonsense_Reasoning___AAAI_UDM.pdf">PDF</a> <br>
-                <u>Abstract</u>: Neural language models for commonsense reasoning often formulate the problem as a QA task and make predictions based on learned representations of language after finetuning or pretraining. However, without providing any training data and pre-defined answer candidates, can neural language models answer commonsense reasoning questions only relying on external knowledge? In this work, we investigate a unique yet challenging problem - open-domain commonsense reasoning that aims to answer questions without providing any answer candidates and finetuning examples. Our proposed method Our method leverages neural language models to iteratively retrieve reasoning chains on the external knowledge base, which does not require task-specific supervision. The reasoning chains can help to identify the most precise answer to the commonsense question and its corresponding knowledge statements to justify the answer choice. We conduct experiments on two commonsense benchmark datasets. Compared to other approaches, our proposed method achieves better performance both quantitatively and qualitatively.
+                <h2 style="font-size: 20px"> Uncertainty-aware segmentation for rainfall prediction post processing </h2> 
+                <strong> Simone Monaco, Luca Monaco, Daniele Apiletti  </strong>
+<!--                 <a class="btn btn-red" href="assets/papers/3/CameraReady/UDM_AAAI_23_camera_ready.pdf">PDF</a>  -->
+                <br>
+                <u>Abstract</u>: Accurate precipitation forecasts are crucial for applications such as flood management, agricultural planning, water resource allocation, and weather warnings. Despite advances in numerical weather prediction (NWP) models, they still exhibit significant biases and uncertainties, especially at high spatial and temporal resolutions. To address these limitations, we explore uncertainty-aware deep learning models for post-processing daily cumulative quantitative precipitation forecasts to obtain forecast uncertainties that lead to a better trade-off between accuracy and reliability. Our study compares different state-of-the-art models, and we propose a variant of the well-known SDE-Net, called SDE U-Net, tailored to segmentation problems like ours. We evaluate its performance for both typical and intense precipitation events.
+
+Our results show that all deep learning models significantly outperform the average baseline NWP solution, with our implementation of the SDE U-Net showing the best trade-off between accuracy and reliability. Integrating these models, which account for uncertainty, into operational forecasting systems can improve decision-making and preparedness for weather-related events.
             </td>
         </tr>
 
         <tr>
             <td>
-                <h2 style="font-size: 20px">A Batch Bayesian Approach for Bilevel Multi-Objective Decision Making Under Uncertainty</h2>
-                <strong>Vedat Dogan, Steven D Prestwich</strong>
-                <a class="btn btn-red" href="assets/papers/15/CameraReady/Dogan - A Batch Bayesian Approach for Bilevel Multi-objective Decision Making Under Uncertainty.pdf">PDF</a> <br>
-                <u>Abstract</u>: Bilevel multiobjective optimization is a field of mathematical programming representing a nested hierarchical decision making process, with one or more decision makers at each level. These problems appear in many practical applications, solving tasks such as optimal control, process optimization, governmental and game playing strategy development, and transportation. Uncertainty cannot be ignored in these practical problems. We present a hybrid algorithm called BAM- BINO, based on a batch Bayesian approach via expected hyper-volume improvement, that can handle uncertainty at the upper level. Three popular modified benchmark problems with multiple dimensions are used to evaluate its performance under objective noise compared to two popular algorithms in the literature. The results show that BAMBINO is computationally efficient and able to handle upper level uncertainty. We also evaluate the effect of batch size on performance.
+                <h2 style="font-size: 20px"> Out-of-Distribution Detection for Heterogeneous Graph Neural Networks </h2> 
+                <strong> Tao Yin, Chen Zhao, Minglai Shao  </strong>
+<!--                 <a class="btn btn-red" href="assets/papers/3/CameraReady/UDM_AAAI_23_camera_ready.pdf">PDF</a>  -->
+                <br>
+                <u>Abstract</u>: Heterogeneous Graph Neural Networks (HGNNs) effectively extract rich node and structural information from heterogeneous graphs. However, in real-world scenarios, due to biased sampling, distribution shifts, and anomalies, there exist out-of-distribution (OOD) nodes in heterogeneous graphs. Although existing HGNNs have achieved good performance in in-distribution (ID) node classification tasks, no prior research has focused on the problem of OOD detection in heterogeneous graphs. Therefore, we propose a method for OOD detection in heterogeneous graphs (OODHG), which aims to identify OOD nodes while classifying ID nodes. Specifically, we calculate the energy score of each node and propagate these scores, fully considering the structural information of the heterogeneous graph. Experimental results demonstrate that our method outperforms baselines in both OOD detection and ID node classification tasks.
             </td>
         </tr>
 
         <tr>
             <td>
-                <h2 style="font-size: 20px">Explaining Predictive Uncertainty by Looking Back at Model Explanations</h2>
-                <strong>Hanjie Chen, Wanyu Du, Yangfeng Ji</strong>
-                <a class="btn btn-red" href="assets/papers/16/CameraReady/ExpUnc_AAAI_Workshop.pdf">PDF</a> <br>
-                <u>Abstract</u>: Predictive uncertainty estimation of pre-trained language models is an important measure of how likely people can trust their predictions. However, little is known about what makes a model prediction uncertain. Explaining predictive uncertainty is an important complement to explaining prediction labels in helping users understand model decision making and gaining their trust on model predictions, while has been largely ignored in prior works. In this work, we propose to explain the predictive uncertainty of pre-trained language models by extracting uncertain words from existing model explanations. We find the uncertain words are those identified as making negative contributions to prediction labels, while actually explaining the predictive uncertainty. Experiments show that uncertainty explanations are indispensable to explaining models and helping humans understand model prediction behavior.
+                <h2 style="font-size: 20px"> HyperDG: A Hypergraph-Based Approach for Dynamic Graph Node Classification under Spatio-Temporal Shift </h2> 
+                <strong> Xiaoxu Ma, Chen Zhao, Minglai Shao </strong>
+<!--                 <a class="btn btn-red" href="assets/papers/3/CameraReady/UDM_AAAI_23_camera_ready.pdf">PDF</a>  -->
+                <br>
+                <u>Abstract</u>: Accurate node classification on dynamic graphs, where node structure, attributes, and labels change over spatio-temporal distributions, remains a challenging problem. Existing methods based on RNNs and self-attention mechanisms struggle to effectively capture the diverse dynamic variations in dynamic graphs. To address this, we propose a novel multi-scale hypergraph-based dynamic graph node classification algorithm (HyperDG). This algorithm uses two modules for hypergraph modeling of dynamic graph nodes: the individual-level hypergraph captures diverse temporal representations among individual nodes, while the group-level hypergraph captures multi-scale temporal group representations among similar nodes. Each hyperedge connects multiple nodes within specific time ranges to capture dependencies at different scales. By propagating and aggregating weighted information through hypergraph neural networks, more accurate temporal dependency representations are obtained. Extensive experiments on five dynamic graph datasets, conducted using two backbone models, demonstrate the superiority of our proposed framework.
             </td>
         </tr>
 
         <tr>
             <td>
-                <h2 style="font-size: 20px">SeedBERT: Recovering Annotator Rating Distributions from an Aggregated Label</h2>
-                <strong>Aneesha Sampath, Victoria Lin, Louis-Philippe Morency</strong>
-                <a class="btn btn-red" href="assets/papers/17/CameraReady/SeedBERT-Final.pdf">PDF</a> <br>
-                <u>Abstract</u>: Many machine learning tasks -- particularly those in affective computing -- are inherently subjective. When asked to classify facial expressions or to rate an individual's attractiveness, humans may disagree with one another, and no single answer may be objectively correct. However, machine learning datasets commonly have just one "ground truth" label for each sample, so models trained on these labels may not perform well on tasks that are subjective in nature. Though allowing models to learn from the individual annotators' ratings may help, most datasets do not provide annotator-specific labels for each sample. To address this issue, we propose SeedBERT, a method for recovering annotator rating distributions from a single label by inducing pre-trained models to attend to different portions of the input. Our human evaluations indicate that SeedBERT's attention mechanism is consistent with human sources of annotator disagreement. Moreover, in our empirical evaluations using large language models, SeedBERT demonstrates substantial gains in performance on downstream subjective tasks compared both to standard deep learning models and to other current models that account explicitly for annotator disagreement.
+                <h2 style="font-size: 20px"> How to Leverage Predictive Uncertainty Estimates for Reducing Catastrophic Forgetting in Online Continual Learning </h2> 
+                <strong> Giuseppe Serra, Ben Werner, Florian Buettner </strong>
+<!--                 <a class="btn btn-red" href="assets/papers/3/CameraReady/UDM_AAAI_23_camera_ready.pdf">PDF</a>  -->
+                <br>
+                <u>Abstract</u>: Many real-world applications require machine-learning models to be able to deal with non-stationary data distributions and thus learn autonomously over an extended period of time, often in an online setting. One of the main challenges in this scenario is the so-called catastrophic forgetting (CF) for which the learning model tends to focus on the most recent tasks while experiencing predictive degradation on older ones. In the online setting, the most effective solutions employ a fixed-size memory buffer to store old samples used for replay when training on new tasks. Many approaches have been presented to tackle this problem. However, it is not clear how predictive uncertainty information for memory management can be leveraged in the most effective manner and conflicting strategies are proposed to populate the memory. Are the easiest-to-forget or the easiest-to-remember samples more effective in combating CF? Starting from the intuition that predictive uncertainty provides an idea of the samples' location in the decision space, this work presents an in-depth analysis of different uncertainty estimates and strategies for populating the memory. The investigation provides a better understanding of the characteristics data points should have for alleviating CF. Then, we propose an alternative method for estimating predictive uncertainty via the generalised variance induced by the negative log-likelihood. Finally, we demonstrate that the use of predictive uncertainty measures helps in reducing CF in different settings.
             </td>
         </tr>
 
         <tr>
             <td>
-                <h2 style="font-size: 20px">Uncertainty-Aware Reward-based Deep Reinforcement Learning for Intent Analysis of Social Media Information</h2>
-                <strong>Zhen Guo, Qi Zhang, Xinwei An, Qisheng Zhang, Audun Jøsang, Lance Kaplan, Feng Chen, Dong Hyun Jeong, Jin-Hee Cho</strong>
-                <a class="btn btn-red" href="assets/papers/19/CameraReady/Zhen_AAAI23_Workshop.pdf">PDF</a> <br>
-                <u>Abstract</u>: Due to various and serious adverse impacts of spreading fake news, it is often known that only people with malicious intent would propagate fake news. However, it is not necessarily true based on social science studies. Distinguishing the types of fake news spreaders based on their intent is critical because it will effectively guide how to intervene to mitigate the spread of fake news with different approaches. To this end, we propose an intent classification framework that can best identify the correct intent of fake news. We will leverage deep reinforcement learning (DRL) that can optimize the structural representation of each tweet by removing noisy words from the input sequence when appending an actor to the long short-term memory (LSTM) intent classifier. Policy gradient DRL model (e.g., REINFORCE) can lead the actor to a higher delayed reward. We also devise a new uncertainty-aware immediate reward using a subjective opinion that can explicitly deal with multidimensional uncertainty for effective decision-making. Via 600K training episodes from the fake news tweets dataset with an annotated intent class, we evaluate the performance of uncertainty-aware reward in DRL. The results demonstrate that to maintain a high $95\%$ multi-class accuracy, our proposed models effectively and efficiently reduce the number of selected words.
+                <h2 style="font-size: 20px"> Measuring Aleatoric and Epistemic Uncertainty in LLMs: Empirical Evaluation on ID and OOD QA Tasks </h2> 
+                <strong> Kevin Wang, Subre Abdoul Moktar, Jia Li, Kangshuo Li, Feng Chen </strong>
+<!--                 <a class="btn btn-red" href="assets/papers/3/CameraReady/UDM_AAAI_23_camera_ready.pdf">PDF</a>  -->
+                <br>
+                <u>Abstract</u>: Large Language Models (LLMs) have become increasingly pervasive, finding applications across many industries and disciplines. Ensuring the trustworthiness of LLM outputs is paramount, where Uncertainty Estimation (UE) plays a key role. In this work, a comprehensive empirical study is conducted to examine the robustness and effectiveness of diverse UE measures regarding aleatoric and epistemic uncertainty in LLMs. It involves twelve different UE methods and four generation quality metrics including LLMScore from LLM criticizers to evaluate the uncertainty of LLM-generated answers in Question-Answering (QA) tasks on both in-distribution (ID) and out-of-distribution (OOD) datasets. Our analysis reveals that information-based methods, which leverage token and sequence probabilities, perform exceptionally well in ID settings due to their alignment with the model's understanding of the data. Conversely, density-based methods and the P(True) metric exhibit superior performance in OOD contexts, highlighting their effectiveness in capturing the model's epistemic uncertainty. Semantic consistency methods, which assess variability in generated answers, show reliable performance across different datasets and generation metrics. These methods generally perform well but may not be optimal for every situation.
             </td>
         </tr>
 
         <tr>
             <td>
-                <h2 style="font-size: 20px">PPO-UE: Proximal Policy Optimization via Uncertainty-Aware Exploration</h2>
-                <strong>Qisheng Zhang, Zhen Guo, Audun Jøsang, Lance Kaplan, Feng Chen, Dong Hyun Jeong, Jin-Hee Cho</strong>
-                <a class="btn btn-red" href="assets/papers/21/CameraReady/Qisheng_AAAI23_Workshop.pdf">PDF</a> <br>
-                <u>Abstract</u>: Proximal Policy Optimization (PPO) is a highly popular policy-based deep reinforcement learning (DRL) approach. However, we observe that the homogeneous exploration process in PPO could cause an unexpected stability issue in the training phase. To address this issue, we propose PPO-UE, a PPO variant equipped with self-adaptive uncertainty-aware explorations (UEs) based on a ratio uncertainty level. The proposed PPO-UE is designed to improve convergence speed and performance with an optimized ratio uncertainty level. Through extensive sensitivity analysis by varying the ratio uncertainty level, our proposed PPO-UE considerably outperforms the baseline PPO in Roboschool continuous control tasks.
+                <h2 style="font-size: 20px"> Bayesian Disease Progression Modeling That Accounts For Health Disparities </h2> 
+                <strong> Erica Chiang, Ashley Beecy, Gabriel Sayer, Nir Uriel, Deborah Estrin, Nikhil Garg, Emma Pierson </strong>
+<!--                 <a class="btn btn-red" href="assets/papers/3/CameraReady/UDM_AAAI_23_camera_ready.pdf">PDF</a>  -->
+                <br>
+                <u>Abstract</u>: Disease progression models, in which a patient's latent severity is modeled as progressing over time and producing observed symptoms, have developed great potential to help with disease detection, prediction, and drug development. However, a significant limitation of existing models is that they do not typically account for healthcare disparities that can bias the observed data. We draw attention to three key disparities: certain patient populations may (1) start receiving care only when their disease is more severe, (2) experience faster disease progression even while receiving care, or (3) receive care less frequently conditional on disease severity. To address this, we develop an interpretable Bayesian disease progression model that captures these three disparities. We show theoretically and empirically that our model correctly estimates disparities and severity from observed data, and that failing to account for these disparities produces biased estimates of severity.
             </td>
         </tr>
-    </table> -->
+
+        <tr>
+            <td>
+                <h2 style="font-size: 20px"> IDGG: Invariant Learning for Out-of-Distribution Generalization on Graphs </h2> 
+                <strong> Qin Tian, Wenjun Wang, Minglai Shao, Chen Zhao, Dong Li </strong>
+<!--                 <a class="btn btn-red" href="assets/papers/3/CameraReady/UDM_AAAI_23_camera_ready.pdf">PDF</a>  -->
+                <br>
+                <u>Abstract</u>: Traditional machine learning methods rely heavily on the independent and identically distributed ({i.i.d) assumption, which poses limitations when test distributions differ from training distributions. To address this, out-of-distribution (OOD) generalization has made significant progress, aiming to maintain performance despite unknown distribution shifts. However, OOD methods for graph-structured data are underexplored due to challenges such as simultaneous distribution shifts in node attributes and graph topology, and the difficulty in capturing invariant information across different distribution shifts. To tackle these challenges, we introduce IDGG, a framework designed to (1) diversify variations across domains by modeling potential variations in the distribution of attribute distribution and topological structure, and (2) minimize variation discrepancy in a representation space for predicting semantic factors that do not vary with distribution shifts. We validate the effectiveness of IDGG on a real-world graph dataset and results show that our model outperforms baseline methods in node-level OOD generalization.
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <h2 style="font-size: 20px"> Semantic OOD Detection under Covariate Shift on Graphs with Diffusion Model </h2> 
+                <strong> Zhixia He, Chen Zhao, Minglai Shao, Yujie Lin, Dong Li </strong>
+<!--                 <a class="btn btn-red" href="assets/papers/3/CameraReady/UDM_AAAI_23_camera_ready.pdf">PDF</a>  -->
+                <br>
+                <u>Abstract</u>: Most existing deep learning methods are based on the closed-world assumption, which assumes that testing data are sampled from the same distribution as the training data. However, when models are deployed in open-world scenarios, testing data can exhibit various distribution shifts. Here, we mainly consider two types of distribution shifts: covariate shift and semantic shift. We raise a new question for OOD detection: semantic OOD detection under covariate shift. Unlike existing graph OOD algorithms only considering one type of distribution shifts, our work addresses both semantic shift and covariate shift simultaneously to fully utilize label and environment information. We propose the Graph Diffusion Augmentation (GDA) framework, which leverages diffusion model to simulate these two types of distribution shifts by semantic augmentation and covariate augmentation. We design perturbation control
+element and label control element to guide the denoising diffusion process at different intermediate timesteps which generate pseudo ID and pseudo OOD data. The GDA model generates diverse pseudo graphs with consistent predictive relationships, helping the predictor learn invariant relationship related to the label information while ignoring spurious relationship with the environment.
+            </td>
+        </tr>        
+    </table>
 
 
 
